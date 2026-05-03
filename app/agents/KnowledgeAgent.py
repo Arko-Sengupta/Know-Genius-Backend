@@ -2,8 +2,8 @@ import json
 import logging
 from dataclasses import dataclass
 
-from app.core.Config import Config
-from app.services.GeminiService import GenerateText, GetModel
+from app.Core.Config import Config
+from app.Services.GeminiService import GenerateText, GetModel
 
 Logger = logging.getLogger(__name__)
 

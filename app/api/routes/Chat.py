@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 
-from app.agents.KnowledgeAgent import KnowledgeAgentInstance
-from app.api.schemas.Chat import ChatRequest, ChatResponse
+from app.Agents.KnowledgeAgent import KnowledgeAgentInstance
+from app.Api.Schemas.Chat import ChatRequest, ChatResponse
 
 Router = APIRouter(prefix="/chat", tags=["chat"])
 

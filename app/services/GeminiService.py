@@ -1,6 +1,6 @@
 import google.generativeai as genai
 
-from app.core.Config import Config
+from app.Core.Config import Config
 genai.configure(api_key=Config.GEMINI_API_KEY)
 
 def GetModel(ModelName: str = "gemini-2.5-flash", SystemInstruction: str = None):

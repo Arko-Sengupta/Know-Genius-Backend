@@ -6,7 +6,7 @@ from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
 
-from app.api.routes.Chat import Router as ChatRouter
+from app.Api.Routes.Chat import Router as ChatRouter
 RateLimiter = Limiter(key_func=get_remote_address, default_limits=["100/15minutes"])
 
 def CreateApp() -> FastAPI:
